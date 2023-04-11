@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --font: 'Open Sans', sans-serif;
+  --primaryColor: #660099;
+  --textColor: #4f4f4f;
+  --linkActiveColor: #41b783;
+  --backColor: #e5e5e5;
+  --white: #ffffff;
+  --muteText: #949494;
+  --borderColor: #bdbdbd;
+  --borderSize: 5px;
+  --hover: #fbfbfb;
+}
+
+body {
+  margin: 0;
+  background-color: var(--backColor);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+  width: 90%;
+}
+
+#app {
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--textColor);
+
+  .logo {
+    width: 20%;
+  }
+}
+
+.nav {
+  padding: 30px 0 100px 0;
+
+  a {
+    font-weight: 500;
+    color: var(--textColor);
+    margin: 0 5px;
+  }
+
+  a.router-link-exact-active {
+    color: var(--linkActiveColor);
+  }
+}

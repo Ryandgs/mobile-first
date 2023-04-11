@@ -1,0 +1,34 @@
+#categories {
+  overflow-x: hidden;
+  padding-top: 75px;
+
+  .title {
+    color: var(--muteText);
+  }
+
+  .selectors {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    cursor: pointer;
+
+    .box {
+      min-width: max-content;
+      padding: 0px 15px;
+      background-color: var(--white);
+      border: 1px solid var(--borderColor);
+      border-radius: var(--borderSize);
+
+      &:hover {
+        background-color: var(--hover);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
